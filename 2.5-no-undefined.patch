@@ -1,0 +1,10 @@
+--- origsrc/launchy-2.5/src/src.pro	2010-03-13 12:29:11.000000000 -0600
++++ src/launchy-2.5/src/src.pro	2011-10-15 22:18:44.977166700 -0500
+@@ -87,6 +87,7 @@ unix:!macx {
+     icon.files = ../misc/Launchy_Icon/launchy_icon.png
+     desktop.path = $$PREFIX/share/applications/
+     desktop.files = ../linux/launchy.desktop
++    LIBS += -lX11
+     INSTALLS += target \
+         skins \
+         icon \
