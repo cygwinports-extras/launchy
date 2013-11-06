@@ -4,7 +4,7 @@
      icon.files = ../misc/Launchy_Icon/launchy_icon.png
      desktop.path = $$PREFIX/share/applications/
      desktop.files = ../linux/launchy.desktop
-+    LIBS += -lX11
++    LIBS += $$QMAKE_LIBS_X11
      INSTALLS += target \
          skins \
          icon \
