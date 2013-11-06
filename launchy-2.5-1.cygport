@@ -1,8 +1,0 @@
-inherit qt4-qmake
-
-DESCRIPTION="Keystroke application launcher"
-HOMEPAGE="http://www.launchy.net/"
-SRC_URI="http://www.launchy.net/downloads/src/${P}.tar.gz"
-
-PATCH_URI="2.5-kde4.patch
-	   2.5-no-undefined.patch"
