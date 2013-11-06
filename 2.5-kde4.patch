@@ -1,3 +1,14 @@
+--- origsrc/launchy-2.5/platforms/unix/platform_unix.cpp	2010-03-10 17:49:22.000000000 -0600
++++ src/launchy-2.5/platforms/unix/platform_unix.cpp	2013-11-05 19:00:47.512414400 -0600
+@@ -79,7 +79,7 @@ QList<Directory> PlatformUnix::getDefaul
+     const char *dirs[] = { "/usr/share/applications/",
+ 			   "/usr/local/share/applications/",
+ 			   "/usr/share/gdm/applications/",
+-			   "/usr/share/applications/kde/",
++			   "/usr/share/applications/kde4/",
+ 			   "~/.local/share/applications/"};
+     QStringList l;
+     l << "*.desktop";
 --- origsrc/launchy-2.5/platforms/unix/platform_unix_util.cpp	2010-02-13 13:37:54.000000000 -0600
 +++ src/launchy-2.5/platforms/unix/platform_unix_util.cpp	2011-10-15 22:33:33.170129500 -0500
 @@ -87,7 +87,7 @@ QString UnixIconProvider::getDesktopIcon
